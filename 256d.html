@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MNIST Autocoder Visualization</title>
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/256d.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <script src="js/mat.js"></script>
+    <script src="js/nn.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/256d.js"></script>
+    <script src="model/256d.js"></script>
+</head>
+
+<body>
+
+<div id="image">
+    <p class="ui-state-default ui-corner-all">
+        <span class="ui-icon ui-icon-pencil"></span>
+        Image
+    </p>
+
+    <canvas id="canvas-orig" width="300px" height="300px"></canvas>
+
+    <div id="canvas-ctrl">
+        <button class="canvas-ctrl-btn" onclick='LineColor="white";'>pencil</button>
+        <button class="canvas-ctrl-btn" onclick='LineColor="black";'>eraser</button>
+        <button class="canvas-ctrl-btn" onclick='clearCanvas();'>clear</button>
+        <button class="canvas-ctrl-btn" onclick="LineWidth=4;">4px</button>
+        <button class="canvas-ctrl-btn" onclick="LineWidth=8;">8px</button>
+        <button class="canvas-ctrl-btn" onclick="LineWidth=16;">16px</button>
+    </div>
+
+    <canvas id="canvas-gene" width="300px" height="300px"></canvas>
+</div>
+
+<div id="feature">
+    <p class="ui-state-default ui-corner-all">
+        <span class="ui-icon ui-icon-pencil"></span>
+        Features
+    </p>
+
+    <div id="sliders">
+        <ul id="slider-list"></ul>
+    </div>
+</div>
+
+</body>
+
+<script>
+    initCanvas();
+    createSliders(256);
+</script>
+
+</html>
