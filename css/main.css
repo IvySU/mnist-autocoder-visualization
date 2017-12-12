@@ -1,0 +1,104 @@
+html, body, div {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+canvas#canvas-orig, canvas#canvas-gene {
+    float: left;
+    margin: 32px 16px 32px 128px;
+}
+
+div#image {
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 100%;
+}
+
+div#canvas-ctrl {
+    float: left;
+    margin: 32px;
+}
+
+div#feature {
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+}
+
+div#sliders {
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.sliderDiv {
+    float: left;
+    width: 255px;
+    margin: 30px;
+}
+
+.canvas-ctrl-btn {
+    display: block;
+    float: left;
+    clear: left;
+    width: 128px;
+    height: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color:white;
+    vertical-align: middle;
+    margin: 4px;
+    border-radius: 16px;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+.slider-list-item {
+    float: left;
+    width: 256px;
+    margin: 6px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.slider {
+    float: left;
+    width: 256px;
+    border-radius: 32px;
+}
+
+.slider-id {
+    display: block;
+    float: left;
+    clear: left;
+    height: 1.2em;
+    min-width: 4em;
+    font-size: 0.8em;
+    text-align: left;
+    vertical-align: middle;
+    margin: 4px;
+}
+
+.slider-text {
+    display: block;
+    float: left;
+    height: 1.2em;
+    min-width: 3.6em;
+    font-size: 1em;
+    border-bottom: 2px dashed aqua;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 4px;
+}
+
+span.ui-icon {
+    float: left;
+    margin: 4px;
+}
